@@ -7,10 +7,10 @@ from nltk.stem import PorterStemmer
 stemmer = PorterStemmer()
 stopwords = set(nltk.corpus.stopwords.words('english'))
 
-with open('./app/vectorizer.pickle', 'rb') as f:
+with open('./vectorizer.pickle', 'rb') as f:
     vectorizer = pickle.load(f)
 
-with open('./app/model.pickle', 'rb') as f:
+with open('./model.pickle', 'rb') as f:
     model = pickle.load(f)
 
 
